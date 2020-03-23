@@ -6,9 +6,13 @@ package kr.ac.sejong.java1;
  */
 public class App {
 	public static void main(String[] args) { //ctrl+shift+f
-		System.out.println("Hello");
-		System.out.println("World");
-		System.out.println("!");
+		//ctrl+space
+		int x=234234234;
+		long y=x;
+		System.out.println(y);
 		
+		long z = 234234234234234l;
+		int k = (int) z;
+		System.out.println(k);
 	}
 }
