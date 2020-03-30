@@ -1,18 +1,19 @@
 package kr.ac.sejong.java1;
 
+import java.util.Stack;
+
 /**
  * Hello world!
  *
  */
 public class App {
-	public static void main(String[] args) { //ctrl+shift+f
-		//ctrl+space
-		int x=234234234;
-		long y=x;
-		System.out.println(y);
+	public static void main(String[] args) { // ctrl+shift+f
+		// ctrl+space
 		
-		long z = 234234234234234l;
-		int k = (int) z;
-		System.out.println(k);
+		Stack<String> stack = new Stack<String>();
+		stack.push("3");
+		stack.push("5");
+		String p = stack.pop();
+		System.out.println(p);
 	}
 }
