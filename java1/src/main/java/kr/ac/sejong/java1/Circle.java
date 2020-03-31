@@ -12,7 +12,9 @@ public class Circle {
 	 * @param y1
 	 * @param r1
 	 */
-	
+	public Circle() {
+		
+	}
 	
 	public double getArea() {
 		return 3.14*r*r;
