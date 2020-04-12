@@ -2,27 +2,20 @@ package kr.ac.sejong.java1;
 
 import java.util.Stack;
 
-/**
- * Hello world!
- *
- */
 public class App {
-	public static void main(String[] args) { // ctrl+shift+f
+	public static void main(String[] args) throws InterruptedException { // ctrl+shift+f
 		// ctrl+space
 		
-		/*Stack<String> stack = new Stack<String>();
-		stack.push("3");
-		stack.push("5");
-		String p = stack.pop();
-		System.out.println(p);*/
+		System.out.println("Hello World1");
 		
-		Sphere s1 = new Sphere(3,4,5,6);
-		//Upcasting
-		Circle c1 = (Circle)s1;
-		System.out.println(c1.getArea());
+		//쓰레드 생성
+		HelloWorldThread t1 = new HelloWorldThread("A");
+		//쓰레드 실행
+		t1.start();
 		
-		//Downcasting
-		Circle c2 = new Circle(3,4,5);
-		Sphere s2 = (Sphere)c2;
+		Thread.sleep(2000);
+		
+		t1.interrupt();
+		
 	}
 }
