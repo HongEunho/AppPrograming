@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/catmenu"
+        android:title="CAT" />
+    <item
+        android:id="@+id/dogmenu"
+        android:title="DOG" />
+    <item
+        android:id="@+id/humanmenu"
+        android:title="HUMAN" />
+</menu>
